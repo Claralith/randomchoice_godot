@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://tmv0i41ojawy"]
+
+[ext_resource type="Script" uid="uid://bm20f8cyt42y1" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="ItemToAdd" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 111.0
+offset_bottom = 57.0
+placeholder_text = "Item name"
+
+[node name="Items" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 95.0
+offset_right = 590.0
+offset_bottom = 480.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 11.0
+offset_right = 207.0
+offset_bottom = 42.0
+text = "Add item"
+
+[node name="ListOfItemsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 69.0
+offset_right = 96.0
+offset_bottom = 92.0
+text = "List of items"
+
+[node name="RandomChoiceButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 11.0
+offset_right = 381.0
+offset_bottom = 42.0
+text = "Get Random Choice"
+
+[node name="RandomChoiceText" type="Label" parent="."]
+offset_left = 638.0
+offset_top = 104.0
+offset_right = 733.0
+offset_bottom = 127.0
+text = "Random choice:"
+
+[node name="SelectedRandomChoiceText" type="Label" parent="RandomChoiceText"]
+offset_left = 127.0
+offset_top = 1.0
+offset_right = 250.0
+offset_bottom = 24.0
