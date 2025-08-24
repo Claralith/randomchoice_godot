@@ -62,3 +62,11 @@ offset_left = 127.0
 offset_top = 1.0
 offset_right = 250.0
 offset_bottom = 24.0
+
+[node name="DeleteItemButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 11.0
+offset_right = 492.0
+offset_bottom = 42.0
+text = "Delete Selected Item(s)"
